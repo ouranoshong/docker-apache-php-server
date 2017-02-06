@@ -6,8 +6,8 @@ services:
     volumes_from:
       - volumes_data
     ports:
-      - "8080:80"
+      - "80:80"
   volumes_data:
     image: tianon/true
     volumes:
-      - ./www:/var/www/html
+      - ../image-server:/var/www/html
